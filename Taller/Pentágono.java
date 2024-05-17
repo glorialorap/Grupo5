@@ -1,20 +1,20 @@
 public class Pentagono extends Figuras  {
-    private int ladoP;
+    private double ladoP;
     private double apotemaP;
     
     public Pentagono() {
     }
 
-    public Pentagono(int ladoP, double apotemaP) {
+    public Pentagono(double ladoP, double apotemaP) {
         this.ladoP = ladoP;
         this.apotemaP = apotemaP;
     }
 
-    public int getLadoP() {
+    public double getLadoP() {
         return ladoP;
     }
 
-    public void setLado(int ladoP) {
+    public void setLado(double ladoP) {
         this.ladoP = ladoP;
     }
 
