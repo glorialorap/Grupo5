@@ -1,4 +1,4 @@
-class Cuentas {
+public class Cuentas {
     private String numeroCuenta;
     private String nombreCliente;
     private double saldo;
