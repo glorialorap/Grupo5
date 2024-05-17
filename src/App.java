@@ -28,7 +28,7 @@ public class App {
                     gestor.eliminarCuenta();
                     break;
                 case 5:
-                 System.out.println("Saliendo del programa...");
+                    System.out.println("Saliendo del programa...");
                     break;
                 default:
                     System.out.println("Opción inválida. Inténtelo de nuevo.");
