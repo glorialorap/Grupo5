@@ -1,4 +1,4 @@
-public class Paralelo {
+public class Paralelo extends Figuras {
     private double base;
     private double altura;
     public Paralelo() {
