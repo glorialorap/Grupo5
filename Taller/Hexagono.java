@@ -1,16 +1,16 @@
 public class Hexagono extends Figuras {
-    private int lado;
+    private double lado;
     private double apotemaH;
     public Hexagono() {
     }
-    public Hexagono(int lado, double apotemaH) {
+    public Hexagono(double lado, double apotemaH) {
         this.lado = lado;
         this.apotemaH = apotemaH;
     }
-    public int getLado() {
+    public double getLado() {
         return lado;
     }
-    public void setLado(int lado) {
+    public void setLado(double lado) {
         this.lado = lado;
     }
     public double getApotemaH() {
