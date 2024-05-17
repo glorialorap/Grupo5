@@ -3,10 +3,11 @@ import java.util.function.Function;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Geometria {
+public class App {
     public static void main(String[] args) {
         // Inicializar scanner para ingreso de datos
         Scanner scanner = new Scanner(System.in);
+        
 
         // Pentágono
         System.out.println("Ingrese el lado del pentágono:");
