@@ -7,6 +7,7 @@ public class App {
         int opcion;
         do {
             System.out.println("----- MENÚ -----");
+            System.out.println("Digite una opción");
             System.out.println("1. Crear cuenta");
             System.out.println("2. Buscar cuenta");
             System.out.println("3. Editar cuenta");
