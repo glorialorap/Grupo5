@@ -1,4 +1,4 @@
-public class Pentagono {
+public class Pentagono extends Figuras  {
     private int ladoP;
     private double apotemaP;
     
