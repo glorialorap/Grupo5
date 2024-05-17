@@ -1,4 +1,5 @@
 public class Cuentas {
+    //Creación de atributos
     private String numeroCuenta;
     private String nombreCliente;
     private double saldo;
@@ -6,10 +7,10 @@ public class Cuentas {
     private String profesion;
     private String Ecivil;
     private String Ced;
-
+    //Constructor vacío
     public Cuentas() {
     }
-
+    //Constructor con todos los atributos
     public Cuentas(String numeroCuenta, String nombreCliente, double saldo, String direccion, String profesion,
             String ecivil, String ced) {
         this.numeroCuenta = numeroCuenta;
@@ -20,7 +21,7 @@ public class Cuentas {
         Ecivil = ecivil;
         Ced = ced;
     }
-
+    //Geters y Seters 
     public String getNumeroCuenta() {
         return numeroCuenta;
     }
