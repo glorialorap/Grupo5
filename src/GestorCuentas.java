@@ -31,7 +31,7 @@ public class GestorCuentas extends Cuentas {
             String ced = teclado.next();
             System.out.println("Ingrese su saldo: ");
             String saldo = teclado.next();
-            System.out.println("Ingrese su dirección: ");
+            System.out.println("Ingrese su dirección (Cr#-CL#): ");
             String direccion = teclado.next();
             System.out.println("Ingrese su profesión: ");
             String Profesion = teclado.next();
@@ -75,9 +75,9 @@ public class GestorCuentas extends Cuentas {
                     System.out.println("--- Cuenta encontrada ---");
                     System.out.println("Número de cuenta: " + cuentass[0]);
                     System.out.println("Nombre del cliente: " + cuentass[1]);
-                    System.out.println("Saldo: " + cuentass[2]);
-                    System.out.println("Dirección: " + cuentass[3]);
-                    System.out.println("Número de cédula: " + cuentass[4]);
+                    System.out.println("Número de cédula: " + cuentass[2]);
+                    System.out.println("Saldo: " + cuentass[3]);
+                    System.out.println("Dirección: " + cuentass[4]);
                     System.out.println("Profesión: " + cuentass[5]);
                     System.out.println("Estado civil: " + cuentass[6]);
                     break;
