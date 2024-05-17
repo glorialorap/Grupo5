@@ -42,7 +42,7 @@ public class App {
 
         
         double umbralArea = 10.2;
-            Stream.of(areaP, areaH, areaPara, areaR)
+            Stream.of(areaPentagono, areaHexagono, areaParalelograma, areaRombo)
                 .filter(area -> area > umbralArea)
                 .forEach(area -> System.out.println("Figura con área mayor a " + umbralArea + ": " + area));
    
