@@ -1,4 +1,4 @@
-public class Rombo {
+public class Rombo extends Figuras  {
     private int ladoo;
     private double DMay;
     private double dmen;
