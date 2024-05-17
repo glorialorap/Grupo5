@@ -41,9 +41,9 @@ public class App {
         System.out.println("Área del Hexágono: " + areaHexagono.apply(perimetroHexagono.apply(lado), apotemaH));
 
         
-        double umbralArea = 10.2;
+        double areaF = 10.2;
             Stream.of(areaPentagono, areaHexagono, areaParalelograma, areaRombo)
-                .filter(area -> area > )
+                .filter(area -> area > areaF )
                 .forEach(area -> System.out.println("Figura con área mayor a " + umbralArea + ": " + area));
    
     }
