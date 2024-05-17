@@ -116,7 +116,7 @@ public class GestorCuentas extends Cuentas {
                     escribir.println(Actuall);
                 }
             }
-            //Las siguientes dos líneas están cerrando los recursos. (Es una buena práctica que se debe manejar siempre)
+            //Las siguientes dos líneas están cerrando los recursos. (Es una buena práctica que se debe hacer siempre)
             escribir.close();
             leer.close();
             boolean exitoso = TEMPOR.renameTo(CUENTAS); // La función renameTo  permite cambiar de nombre a un archivo o en este caso mover todo
@@ -181,6 +181,6 @@ public class GestorCuentas extends Cuentas {
         } catch (IOException e) {
             System.out.println("Error al editar la cuenta.");
             e.printStackTrace();
-        }//Las últimas 7 líneas de código se encargan del Try Catch que son las excepciones que lanzan en caso de errores
+        }//Las últimas 7 líneas de código se encargan del Try Catch que lanzan las excepciones si hay algún error.
     }
 }
