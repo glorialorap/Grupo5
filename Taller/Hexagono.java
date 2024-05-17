@@ -1,4 +1,4 @@
-public class Hexagono {
+public class Hexagono extends Figuras {
     private int lado;
     private double apotemaH;
     public Hexagono() {
