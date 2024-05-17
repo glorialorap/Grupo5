@@ -40,6 +40,12 @@ public class App {
         BiFunction<Double, Double, Double> areaHexagono = (perimetro, apotema) -> (perimetro * apotema) / 2;
         System.out.println("Área del Hexágono: " + areaHexagono.apply(perimetroHexagono.apply(lado), apotemaH));
 
+        
+        double umbralArea = 10.2;
+            Stream.of(areaP, areaH, areaPara, areaR)
+                .filter(area -> area > umbralArea)
+                .forEach(area -> System.out.println("Figura con área mayor a " + umbralArea + ": " + area));
+   
     }
 
     public static double inputPositivo(Scanner scanner) {
