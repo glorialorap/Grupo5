@@ -39,7 +39,42 @@ public class App {
 
         BiFunction<Double, Double, Double> areaHexagono = (perimetro, apotema) -> (perimetro * apotema) / 2;
         System.out.println("Área del Hexágono: " + areaHexagono.apply(perimetroHexagono.apply(lado), apotemaH));
+        
+        
+        // Paraelograma
+        System.out.println("Ingrese la base del paralelograma:");
+        double base = inputPositivo(scanner);
+        System.out.println("Ingrese la altura del paralelograma:");
+        double altura = inputPositivo(scanner);
 
+        paralelograma.setBase(base);
+        paralelograma.setAltura(altura);
+
+        Function<Double, Double> perimetroParalelograma = (lado2) -> 2 * (base + altura);
+        System.out.println("Perímetro del Paralelograma: " + perimetroParalelograma.apply(base));
+
+        BiFunction<Double, Double, Double> areaParalelograma = (bas, altur) -> base * altura;
+        System.out.println("Área del Paralelograma: " + areaParalelograma.apply(base, altura));
+
+        // Rombo
+        System.out.println("Ingrese el lado del rombo:");
+        double lado1 = inputPositivo(scanner);
+        System.out.println("Ingrese la diagonal menor del rombo:");
+        double dm = inputPositivo(scanner);
+        System.out.println("Ingrese la diagonal mayor del rombo:");
+        double dM = inputPositivo(scanner);
+
+        rombo.setLadoo(lado1);
+        rombo.setDmen(dm);
+        rombo.setDMay(dM);
+
+        Function<Double, Double> perimetroRombo = (lado3) -> 4 * lado;
+        System.out.println("Perímetro del Rombo: " + perimetroRombo.apply(lado));
+
+        BiFunction<Double, Double, Double> areaRombo = (diagonalMenor, diagonalMayor) -> (diagonalMenor * diagonalMayor) / 2;
+        System.out.println("Área del Rombo: " + areaRombo.apply(dm, dM));
+
+        
         
         double areaF = 10.2;
             Stream.of(areaPentagono, areaHexagono, areaParalelograma, areaRombo)
